@@ -8,17 +8,17 @@
 # For third-party python libraries, see conda_dependencies.yml.
 
 configuration: 
+  "spark.locality.wait": "3000"
+  "spark.scheduler.minRegisteredResourcesRatio": "1"
+  "spark.task.maxFailures": "1"
+  "spark.yarn.am.extraJavaOption": "-XX:MaxPermSize=384m"
+  "spark.yarn.max.executor.failures": "1"
+  "maximizeResourceAllocation": "true"
   #"spark.driver.cores": "8"
   #"spark.driver.memory": "5200m"
   #"spark.executor.instances": "128"
   #"spark.executor.memory": "5200m"  
   #"spark.executor.cores": "2"
-  "spark.locality.wait":"3000"
-  "spark.scheduler.minRegisteredResourcesRatio":"1"
-  "spark.task.maxFailures":"1"
-  "spark.yarn.am.extraJavaOption":"-XX:MaxPermSize=384m"
-  "spark.yarn.max.executor.failures":"1"
-  "maximizeResourceAllocation": "true"
 
 repositories:
   - "https://mmlspark.azureedge.net/maven"
