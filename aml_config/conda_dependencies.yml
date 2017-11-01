@@ -17,6 +17,8 @@ dependencies:
     - cryptography
     - azure
     - azure-storage
+    - colorama==0.3.8
+    - h2o_pysparkling_2.2
     
     # The API for Azure Machine Learning Model Management Service.
     - azure-ml-api-sdk==0.1.0a9

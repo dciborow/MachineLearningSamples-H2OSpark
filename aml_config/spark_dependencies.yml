@@ -1,3 +1,4 @@
+
 # Spark configuration and packages specification. The dependencies defined in
 # this file will be automatically provisioned for each run that uses Spark.
 
@@ -7,12 +8,18 @@
 # For third-party python libraries, see conda_dependencies.yml.
 
 configuration: 
+  "spark.locality.wait": "3000"
+  "spark.scheduler.minRegisteredResourcesRatio": "1"
+  "spark.task.maxFailures": "1"
+  "spark.yarn.am.extraJavaOption": "-XX:MaxPermSize=384m"
+  "spark.yarn.max.executor.failures": "1"
+  "maximizeResourceAllocation": "true"
   #"spark.driver.cores": "8"
   #"spark.driver.memory": "5200m"
   #"spark.executor.instances": "128"
   #"spark.executor.memory": "5200m"  
   #"spark.executor.cores": "2"
-  
+
 repositories:
   - "https://mmlspark.azureedge.net/maven"
   - "https://spark-packages.org/packages"
@@ -23,3 +30,10 @@ packages:
   - group: "databricks"
     artifact: "spark-sklearn"
     version: "0.2.0"
+  - group: "ai.h2o"
+    artifact: "sparkling-water-core_2.11"
+    version: "2.1.13"
+  - group: "no.priv.garshol.duke"
+    artifact: "duke"
+    version: "1.2"
+
