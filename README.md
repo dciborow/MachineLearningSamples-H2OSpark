@@ -1,4 +1,4 @@
-# Distributed Tuning of Hyperparameters using Azure Machine Learning Workbench
+# H2O Spark using Azure Machine Learning Workbench
 
 ## Link to the Microsoft DOCS site
 
