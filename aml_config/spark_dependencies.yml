@@ -30,3 +30,10 @@ packages:
   - group: "databricks"
     artifact: "spark-sklearn"
     version: "0.2.0"
+  - group: "ai.h2o"
+    artifact: "sparkling-water-core_2.11"
+    version: "2.1.13"
+  - group: "no.priv.garshol.duke"
+    artifact: "duke"
+    version: "1.2"
+
