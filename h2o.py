@@ -15,7 +15,7 @@ class timeit():
     def __enter__(self):
         self.tic = self.datetime.now()
     def __exit__(self, *args, **kwargs):
-        print('runtime: {}'.format(self.datetime.now() - self.tic))
+        print(f'runtime: {self.datetime.now() - self.tic}')
 
 sc = SparkContext.getOrCreate()
 
